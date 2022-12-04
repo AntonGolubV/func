@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+      
+      /* Задание 1 */
+      let val = (a,b) =>{
+        if(a>b){
+          console.log(b);
+          } else if(a<b){
+            console.log(a);
+            }else{
+              console.log('Равно')
+        }
+      }
+      val(2,3);
+ 
+      /* Задание 2
+      function Mnoj(a){
+        
+        for(let i = 2; i <= 9; i++){
+          let val = i * a;
+        
+          console.log(val);
+        }
+        
+      }
+      Mnoj(3); */
+
+      /* Задание 3
+      let val = prompt('Введите своё имя');
+      function Name(a){
+        console.log(`Здравствуте ${a}`);
+       }
+      Name(val);
+ */
+
+       /* Задание 4 */
+      /*  let count = 1;
+       function Del(a,b){
+        for(let i =0; i < a; i++){
+            
+         if(a - (b*count) > b) {
+            count++;
+         } else if(a - (b*count) < b){
+            break
+         }
+         
+         
+        }
+        let val = (a - (b*count));
+        console.log(val);
+    }
+       Del(13,3); 
+       */
+
+       /* Задание 5 */
+
+     /*  function val(a, b = 0, c = 0, d = 0, e = 0){
+        console.log(a+b+c+d+e);
+       
+      }
+      val(1,2,3,4);
+       */
+
+
+       /* Задание 6 */
+        /* let val = +prompt('Введите число');
+       let val1 = +prompt('Введите число');
+       function Diapason(a,b,bool){
+        for(let i = a; i <= b; i++){
+          if(bool == true){
+           if(i%2 == 0){
+            console.log(i);
+           }
+          }else if(bool == false){
+            if(i%2 != 0){
+              console.log(i);
+            }
+          }
+        }
+      }
+       Diapason(val,val1,false); */
+
+       /* Задание 7 */
+        
+        /* function Sp(a, b = a){
+        let val = a*b;
+        console.log(val);
+        
+       
+       } 
+       Sp(2); */
+       
+       /* Задание 8  */
+      /*  let val = +prompt('Введите количество часов');
+       let val1 = +prompt('Введите количество минут');
+       let val2 = +prompt('Введите количество секунд');
+       function SumSec(a,b,c){
+        value = a*3600;
+        value1 = b*60;
+        let sum = (value+value1+c)
+        console.log(sum);
+        }
+        SumSec(val,val1,val2); 
+        
+
+        Задание 9*/
+        /* let val = +prompt('введите количество секунд');
+        function Chas(a){
+          let val1 = parseInt(a/3600);
+          let val2 = parseInt((a%3600)/60);
+          let val3 = parseInt((a-((3600*val1)))%60);
+          console.log(`Часов ${val1}; Минут ${val2}; Секунд ${val3}`);
+        }
+        Chas(val); 
+        
+        Задание 10*/
+        /*  let arr = [154,11,145,516,16];
+         let arr1 = [];
+        function Mas(a){
+          for(let i = 0; i < arr.length;i++){
+             if(arr[i]%2 == 0){
+              
+               arr1.push(arr[i]);
+             
+             }  
+
+          }
+        arr = arr1; 
+        console.log(arr);
+        }
+       
+        Mas(arr);  */
+       /* Задание 11 */
+
+       /* let val = +prompt('введите число');
+       let val1 = +prompt('введите число');
+       let arr = [];
+       vak = 0;
+        function Diapason(a,b){
+          vak = parseInt(Math.random() * ((b) - (a)) + (a));
+          console.log(vak);
+          function mas(a = 1){
+            for(let i = 0; i<a; i++){
+              arr.push(parseInt(Math.random() * ((9) - (0)) + (0)));
+            }
+            console.log(arr);
+          }
+          mas(vak);
+        }
+        Diapason(val,val1); */
+
+      /*  Задание 12 */
+      let arr = [12,0,1313,13,145,15];
+      function Masive(a){
+        for(let i = 0; i<arr.length; i++){
+          if(arr[i] < 0){
+            console.log('В массиве есть отрицательные числа');
+            break;
+          }else{
+            console.log(arr[i]*(-1));
+          }
+        }
+      }
+        Masive(arr);
+    </script>
+</body>
+</html>
